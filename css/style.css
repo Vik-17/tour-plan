@@ -808,17 +808,15 @@ template {
   overflow: hidden;
 }
 
-.newsletter {
+.newsletter, .parallax-window {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.newsletter::before {
+.newsletter::before, .parallax-window::before {
   content: '';
   position: absolute;
   top: 0;
@@ -830,7 +828,7 @@ template {
   background-color: rgba(10, 34, 61, 0.8);
 }
 
-.newsletter-wrapper {
+.newsletter-wrapper, .parallax-window-wrapper {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -845,7 +843,7 @@ template {
   margin: auto;
 }
 
-.newsletter-title {
+.newsletter-title, .parallax-window-title {
   color: #fff;
   font-style: normal;
   font-weight: 300;
@@ -853,7 +851,7 @@ template {
   line-height: 30px;
 }
 
-.newsletter-title__strong {
+.newsletter-title__strong, .parallax-window-title__strong {
   display: block;
   font-weight: 600;
   font-size: 36px;
@@ -1192,9 +1190,6 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
-  }
-  .newsletter {
-    background-attachment: scroll;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
