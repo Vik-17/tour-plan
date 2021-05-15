@@ -1201,7 +1201,7 @@ template {
   }
   .card {
     width: 340px;
-    height: 230px;
+    height: 255px;
   }
 }
 
@@ -1334,7 +1334,6 @@ template {
   }
   .card {
     width: 49%;
-    height: 255px;
   }
 }
 
