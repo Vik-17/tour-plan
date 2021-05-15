@@ -1191,6 +1191,14 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
