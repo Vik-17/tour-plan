@@ -1193,6 +1193,9 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .newsletter {
+    background-attachment: scroll;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
