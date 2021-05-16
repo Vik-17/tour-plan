@@ -1331,6 +1331,10 @@ template {
     width: 230px;
     height: 230px;
   }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (max-width: 992px) {
