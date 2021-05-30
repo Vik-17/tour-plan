@@ -29,12 +29,9 @@ $(document).ready(function () {
   // $(".parallax-window").parallax({ imageSrc: "/img/newsletter-bg.jpg" });
 
   // Бургер меню
-  var menuButton = document.querySelector(".menu-button");
-  menuButton.addEventListener("click", function () {
-    console.log("Клик по кнопке меню");
-    document
-      .querySelector(".navbar-bottom")
-      .classList.toggle("navbar-bottom--visible");
+  var menuButton = $(".menu-button");
+  menuButton.on("click", function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
   });
 
   var modalButton = $("[data-toggle=modal]");
@@ -43,10 +40,9 @@ $(document).ready(function () {
   closeModalButton.on("click", closeModal);
 
   function openModal() {
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.addClass("modal__overlay--visible");
-    modalDialog.addClass("modal__dialog--visible");
+    var targetModal = $(this).attr("data-href");
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
   }
 
   function closeModal(event) {
